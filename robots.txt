@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://estcalculator.infinityfreeapp.com/sitemap.xml
+
+Sitemap:  estcalculator.pages.dev/sitemap.xml
