@@ -1,0 +1,57 @@
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+.container {
+  background-color: #33a3b2;
+  padding: 2rem;
+  border-radius: 50px;
+  margin-top: 2rem;
+}
+input, select {
+  border-radius: 20px !important;
+  font-size: 1rem;
+}
+#resultDiv {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+a {
+  color: #002147;
+  text-decoration: underline;
+}
+#actDiv input, #actDiv button {
+  width: 120px;
+  height: 40px;
+  margin: 0.3rem 0;
+}
+#tansik {
+  display: none;
+}
+#estScoreDiv input {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.3rem 0.75rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  #actDiv input, #actDiv button {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
