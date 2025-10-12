@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://estcalculator.pages.dev/new-sitemap.xml
+Sitemap: https://estcalculator.pages.dev/sitemap.xml
+
