@@ -1,0 +1,11 @@
+.form-control::placeholder {
+    color: #adb5bd; /* Bootstrap gray */
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+    input.form-control-sm {
+        height: 2.2rem;   /* slightly taller on phones */
+        font-size: 1rem;  /* easier to read */
+    }
+}
