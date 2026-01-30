@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://estcalculator.pages.dev</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-01-30</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://estcalculator.pages.dev/gpa/</loc>
+    <lastmod>2026-01-30</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://estcalculator.pages.dev/tansik</loc>
-    <lastmod>2025-09-27</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
