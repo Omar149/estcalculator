@@ -42,6 +42,8 @@ const estResult = document.getElementById("estResult");
 const estRange = document.getElementById("estRange");
 const tansikTable = document.getElementById("tansik");
 const matchTable = document.getElementById("matchTable");
+const sortOrder = document.getElementById("sortOrder");
+const sortIcon = document.getElementById("sortIcon");
 let score1 = 0;
 let score2 = 0;
 let gpaScore = 0;
@@ -102,6 +104,9 @@ function getScore(){
         row.insertCell().textContent = "No matches found";
         row.insertCell().textContent = "---";
     }
+    if(sortOrder.value === "asc"){
+        reverseTable();
+    }
 }
 function convert(){
     estResult.value = "";
@@ -142,6 +147,9 @@ function showAllMatches(){
         row.insertCell().textContent = e[0];
         row.insertCell().textContent = e[1];
     });
+    if(sortOrder.value === "asc"){
+        reverseTable();
+    }
 }
 function searchUnis(name){
     matchTable.innerHTML = "";
@@ -156,10 +164,26 @@ function searchUnis(name){
         row.insertCell().textContent = "No matches found";
         row.insertCell().textContent = "---";
     }
+    if(sortOrder.value === "asc"){
+        reverseTable();
+    }
+}
+function reverseTable(){
+    const rows = Array.from(matchTable.children);
+    rows.reverse().forEach(row => matchTable.appendChild(row));
 }
 if(document.getElementById("calculate")){
     document.getElementById("calculate").addEventListener("click", getScore);
     document.getElementById("actSubmit").addEventListener("click", convert);
     document.getElementById("allButton").addEventListener("click", showAllMatches);
     document.getElementById("searchUni").addEventListener("change", function(){ searchUnis(this.value); });
+    sortOrder.addEventListener("change", ()=>{
+        reverseTable();
+
+        if(sortOrder.value === "asc"){
+            sortIcon.className = "bi bi-sort-up";
+        } else {
+            sortIcon.className = "bi bi-sort-down";
+        }
+    });
 }
