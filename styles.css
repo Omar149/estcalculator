@@ -5,6 +5,11 @@ body {
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
   padding: 20px;
 }
+.card {
+    border: 1px solid #94a3b8;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+    border-radius: 1rem;
+}
 .container {
   padding: 2rem;
   border-radius: 50px;
