@@ -47,7 +47,7 @@ a {
   margin: 0.3rem 0;
 }
 #tansik {
-  display: none;
+  display: hidden;
 }
 #estScoreDiv input {
   font-weight: bold;
@@ -72,9 +72,15 @@ a {
   }
   .flexDiv {
     flex-direction: column;
+    align-items: center;
   }
   .flexDiv * {
-    width: auto;
     margin: auto;
+  }
+}
+@media (max-width: 330px) {
+  .container {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
 }
