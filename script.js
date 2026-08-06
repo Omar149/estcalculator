@@ -110,15 +110,24 @@ function convert(){
 
     actArray = actArray.map(Number);
 
-    if(!actArray.every(e => typeof e === "number" && !Number.isNaN(e) && e <= 36 && e >= 10 && Number.isInteger(e))){
+    if(!actArray.every(e => typeof e === "number" && !Number.isNaN(e) && e <= 36 && e >= 1 && Number.isInteger(e))){
         alert("Please enter a valid ACT Score.");
         return;
     }
 
     let englishScore = actArray[1]+actArray[2];
     let mathScore = actArray[0];
-    let avg = Math.round((englishScore/2 + mathScore)/2);
 
+    if(mathScore < 10){
+        alert("ACT Math scores below 10 cannot be converted because official concordance data is not available.");
+        return;
+    } 
+    if(englishScore < 14){
+        alert("ACT English + Reading scores below 14 cannot be converted because official concordance data is not available.");
+        return;
+    }
+
+    let avg = Math.round((englishScore/2 + mathScore)/2);
     englishScore = englishConversion[englishScore] || "-";
     mathScore = mathConversion[mathScore] || "-";
     let actTotal = englishScore + mathScore;
