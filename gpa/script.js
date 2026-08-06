@@ -8,7 +8,7 @@ let i = 1;
 function addC(){
     i++;
     let row = tableBody.insertRow();
-    row.insertAdjacentHTML('beforeend', `<td>${i}</td><td><input type="text" class="form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="Course name (optional)"></td><td><input type="number" class="ch form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="Credit Hours"></td><td><input type="number" class="gpa form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="GPA"></td>`);
+    row.insertAdjacentHTML('beforeend', `<td>${i}</td><td><input type="text" class="w-100 form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="Course name (optional)"></td><td><input type="number" class="ch w-100 form-control form-control-sm bg-dark text-light border-primary text-center" step="0.5" min="0" placeholder="Credit Hours"></td><td><input type="number" class="gpa w-100 form-control form-control-sm bg-dark text-light border-primary text-center" step="0.01" min="0" placeholder="GPA"></td>`);
 }
 function deleteC(){
     if(i===1){return}
@@ -23,12 +23,12 @@ function calculate(){
     for(let e = 0; e<i; e++){
         let val = Number(gpas[e].value);
         let val2 = Number(ch[e].value);
-        if(!gpas[e].value.trim || isNaN(val) || val<=0){
-            alert(`Please enter your GPAs (Row ${e+1})!`);
+        if(!gpas[e].value.trim() || isNaN(val) || val<0){
+            alert(`Please enter a valid GPA (Row ${e+1})!`);
             return;
         }
-        if(!ch[e].value.trim || isNaN(val2) || val2<=0){
-            alert(`Please enter your Credit Hours (Row ${e+1})!`);
+        if(!ch[e].value.trim() || isNaN(val2) || val2<=0){
+            alert(`Please enter valid Credit Hours (Row ${e+1})!`);
             return;
         }
     }
