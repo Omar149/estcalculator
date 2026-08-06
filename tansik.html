@@ -36,20 +36,21 @@
         </nav>
         <h1>American Diploma Tansik 2025</h1>
         <p>The 2025 Tansik for American Diploma students in Egypt</p>
-        <h2 style="font-size: 20px;"><a href="https://estcalculator.pages.dev">Calculate EST, SAT, or ACT scores for American students</a></h2>
+        <h2 style="font-size: 20px;"><a href="https://estcalculator.pages.dev">Calculate EST, SAT, or ACT scores for American Diploma students</a></h2>
         <div class="card mt-5 shadow-sm">
             <label for="year" class="form-label mt-3" style="font-size: 18px;">Year:</label>
             <select class="form-select mx-auto w-auto" style="font-size: 18px;" id="year">
                 <option value="" disabled>Select an option</option>
-                <option value="1" selected>2025</option>
-                <option value="2">2024</option>
+                <option value="1" selected>2026</option>
+                <option value="2">2025</option>
+                <option value="3">2024</option>
             </select>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered align-middle text-center" style="font-size: 20px;">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">University</th>
+                                <th scope="col">University/College</th>
                                 <th scope="col">Score (%)</th>
                             </tr>
                         </thead>
@@ -59,8 +60,9 @@
             </div>
         </div>
         <script type="module">
-            import {tansik, tansik2024} from "/script.js";
+            import {tansik2025, tansik2024} from "/script.js";
             let table = document.getElementById("tbody");
+            let tansik = [""];
             tansik.forEach(e => {
                 let row = table.insertRow();
                 row.insertCell().textContent = e[0];
@@ -70,13 +72,13 @@
             document.getElementById("year").addEventListener("change", function(){
                 table.innerHTML = "";
                 if(this.value === "2"){
-                    tansik2024.forEach(e => {
+                    tansik2025.forEach(e => {
                         let row = table.insertRow();
                         row.insertCell().textContent = e[0];
                         row.insertCell().textContent = e[1];
                     })
-                } else {
-                    tansik.forEach(e => {
+                } else if (this.value == "3") {
+                    tansik2024.forEach(e => {
                         let row = table.insertRow();
                         row.insertCell().textContent = e[0];
                         row.insertCell().textContent = e[1];
@@ -87,11 +89,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
