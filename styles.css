@@ -15,6 +15,15 @@ body {
   border-radius: 50px;
   margin-top: 2rem;
 }
+.table {
+    background-color: #e5e7eb;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #d1d5db;
+}
+.table-striped > tbody > tr:nth-of-type(even) > * {
+    background-color: #e5e7eb;
+}
 input, select {
   border-radius: 20px !important;
   font-size: 1rem;
