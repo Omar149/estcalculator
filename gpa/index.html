@@ -49,8 +49,8 @@
                         <tr> 
                             <td>1</td> 
                             <td><input type="text" class="w-100 form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="Course name (optional)"></td>
-                            <td><input type="number" class="ch w-100 form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="Credit Hours"></td>
-                            <td><input type="number" class="gpa w-100 form-control form-control-sm bg-dark text-light border-primary text-center" placeholder="GPA"></td>
+                            <td><input type="number" class="ch w-100 form-control form-control-sm bg-dark text-light border-primary text-center" step="0.5" min="0" placeholder="Credit Hours"></td>
+                            <td><input type="number" class="gpa w-100 form-control form-control-sm bg-dark text-light border-primary text-center" step="0.01" min="0" placeholder="GPA"></td>
                         </tr>
                     </tbody> 
                 </table>
@@ -67,6 +67,3 @@
         <script src="script.js"></script>
     </body>
 </html>
-
-
-
