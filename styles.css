@@ -47,7 +47,7 @@ a {
   margin: 0.3rem 0;
 }
 #tansik {
-  display: hidden;
+  display: none;
 }
 #estScoreDiv input {
   font-weight: bold;
