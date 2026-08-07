@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://estcalculator.pages.dev/sitemap.xml
-
-Content-Signal: ai-train=no, search=yes, ai-input=yes
