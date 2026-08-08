@@ -60,19 +60,23 @@ function getScore(){
 
     if(!score1 || !score2 || !gpaScore){
         alert("Please enter your scores and GPA!");
-        result.textContent = "=";
+        result.textContent = "";
+        tansikTable.style.display = "none";
         return;
     } else if(uniType !== "public" && uniType !== "private"){
         alert("Please choose your university type!");
-        result.textContent = "=";
+        tansikTable.style.display = "none";
+        result.textContent = "";
         return;
     } else if(score1 < 400 || score1 > 1600 || score2 < 400 || score2 > 1600 || score1 % 10 !== 0 || score2 % 10 !== 0){
         alert("Please enter a valid EST score!");
-        result.textContent = "=";
+        tansikTable.style.display = "none";
+        result.textContent = "";
         return;
     } else if (gpaScore > 40 || gpaScore < 0){
         alert("Please enter a valid GPA!");
-        result.textContent = "=";
+        result.textContent = "";
+        tansikTable.style.display = "none";
         return;
     }
 
