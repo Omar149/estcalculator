@@ -3,7 +3,7 @@ body {
   text-align: center;
   min-height: 100vh !important;
   background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-  padding: 20px;
+  padding: 0 20px;
 }
 .card {
     border: 1px solid #94a3b8;
