@@ -59,10 +59,11 @@
                   <input
                     id="est1"
                     type="number"
-                    class="form-control"
-                    placeholder="400-1600"
+                    class="form-control border-secondary"
+                    placeholder="400&ndash;1600"
                     min="400"
                     max="1600"
+                    step="10"
                     required
                   />
                 </div>
@@ -71,23 +72,24 @@
                   <input
                     id="est2"
                     type="number"
-                    class="form-control"
-                    placeholder="400-1600"
+                    class="form-control border-secondary"
+                    placeholder="400&ndash;1600"
                     min="400"
                     max="1600"
+                    step="10"
                     required
                   />
                 </div>
                 <div class="mb-3">
                   <label for="gpa" class="form-label">GPA (out of 40):</label>
-                  <input id="gpa" type="number" class="form-control" placeholder="GPA" max="40" required />
+                  <input id="gpa" type="number" class="form-control border-secondary" placeholder="0&ndash;40" max="40" step="0.1" required />
                 </div>
                 <div class="mb-3">
                   <label for="uni" class="form-label">University Type:</label>
-                  <select id="uni" class="form-select" required>
+                  <select id="uni" class="form-select border-secondary" required>
                     <option value="" disabled selected>Select Type</option>
-                    <option value="public">Public</option>
-                    <option value="private">Private</option>
+                    <option value="public">Public - حكومي</option>
+                    <option value="private">Private - خاص</option>
                   </select>
                 </div>
                 <div class="mb-3 text-center">
@@ -115,7 +117,7 @@
                   <label class="form-label">ACT Scores:</label>
                   <input
                     id="actMath"
-                    class="form-control mb-2"
+                    class="form-control mb-2 border-secondary"
                     type="number"
                     placeholder="Math (1-36)"
                     min="1"
@@ -124,7 +126,7 @@
                   />
                   <input
                     id="actEnglish"
-                    class="form-control mb-2"
+                    class="form-control mb-2 border-secondary"
                     type="number"
                     placeholder="English (1-36)"
                     min="1"
@@ -133,7 +135,7 @@
                   />
                   <input
                     id="actReading"
-                    class="form-control mb-3"
+                    class="form-control mb-3 border-secondary"
                     type="number"
                     placeholder="Reading (1-36)"
                     min="1"
