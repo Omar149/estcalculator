@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>2025 American Diploma Tansik Egypt</title>
+    <title>2026 American Diploma Tansik Egypt</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="American Diploma Tansik for the 2025-2026 academic year. See the updated scores for each public Egyptian university and college."
+      content="American Diploma Tansik for the 2026-2027 academic year. See the updated scores for each public Egyptian university and college."
     />
     <meta name="geo.region" content="EG" />
     <meta name="google-site-verification" content="kC3MD4U9ueDH6G-ekJu2nZVUK-XXSAlPMKfxy8IHWck" />
@@ -39,14 +39,14 @@
               <a class="nav-link" href="gpa/index.html">Weighted GPA Calculator</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="tansik.html">Tansik 2024-2025</a>
+              <a class="nav-link active" href="tansik.html">Tansik 2024-2026</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h1>American Diploma Tansik 2025</h1>
-    <p>The 2025 Tansik for American Diploma students in Egypt</p>
+    <h1>American Diploma Tansik 2026</h1>
+    <p>The 2026 Tansik for American Diploma students in Egypt</p>
     <h2 style="font-size: 20px">
       <a href="https://estcalculator.pages.dev">Calculate EST, SAT, or ACT scores for American Diploma students</a>
     </h2>
@@ -76,9 +76,8 @@
       </div>
     </div>
     <script type="module">
-      import { tansik2025, tansik2024 } from "/script.js";
+      import { tansik, tansik2025, tansik2024 } from "/script.js";
       let table = document.getElementById("tbody");
-      let tansik = [""];
       tansik.forEach((e) => {
         let row = table.insertRow();
         row.insertCell().textContent = e[0];
@@ -95,6 +94,12 @@
           });
         } else if (this.value == "3") {
           tansik2024.forEach((e) => {
+            let row = table.insertRow();
+            row.insertCell().textContent = e[0];
+            row.insertCell().textContent = e[1];
+          });
+        } else {
+          tansik.forEach((e) => {
             let row = table.insertRow();
             row.insertCell().textContent = e[0];
             row.insertCell().textContent = e[1];
