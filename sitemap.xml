@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://estcalculator.pages.dev</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://estcalculator.vercel.app</loc>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
-    <loc>https://estcalculator.pages.dev/gpa</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://estcalculator.vercel.app/gpa</loc>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
-    <loc>https://estcalculator.pages.dev/tansik</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://estcalculator.vercel.app/tansik</loc>
+    <lastmod>2026-10-03</lastmod>
   </url>
 </urlset>
