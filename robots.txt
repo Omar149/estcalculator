@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /_vercel/
 Allow: /
 
 Sitemap: https://estcalculator.vercel.app/sitemap.xml
